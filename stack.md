@@ -22,11 +22,11 @@ Create a file `student.sql`
 
 Copy the following content into that file.
 ```
-create database studentapp;
+create database if not exists studentapp;
 use studentapp;
-CREATE TABLE Students(student_id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE if not exists Students(student_id INT NOT NULL AUTO_INCREMENT,
 	student_name VARCHAR(100) NOT NULL,
-    student_addr VARCHAR(100) NOT NULL,
+        student_addr VARCHAR(100) NOT NULL,
 	student_age VARCHAR(3) NOT NULL,
 	student_qual VARCHAR(20) NOT NULL,
 	student_percent VARCHAR(10) NOT NULL,
